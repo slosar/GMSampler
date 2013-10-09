@@ -14,16 +14,16 @@ User serviceable part:
   
 self.N1=1000 ## how many samples for each Gaussian
 
-## some time we have *fast* parameters aka cosmomic (i.e. parameters whose change is cheap in term of calculating likelihood)
-### we want to oversample those
+# some times we have *fast* parameters aka cosmomic (i.e. parameters whose change is cheap in term of calculating likelihood)
+# we want to oversample those
 self.N1f=4 ## subsample fast how much
 self.fastpars=None ### which are fast parameters
 
-## the parameter below should really be more like 1 or 1.1 for N>10
+# the parameter below should really be more like 1 or 1.1 for N>10
 self.blow=2.0 ## factor by which to increase the enveloping Gauss
 
-### this now determines when to stop. Set to a number >>1.
-### at 5000 one gets pretty good sampling.
+# this now determines when to stop. Set to a number >>1.
+# at 5000 one gets pretty good sampling.
 self.mineffsamp=5000 ### minimum number effective samples that we require
 
 ### do not try to lear cov yourself
