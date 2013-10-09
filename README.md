@@ -1,0 +1,4 @@
+GMSampler
+=========
+
+Gaussian Mixtures Sampler
